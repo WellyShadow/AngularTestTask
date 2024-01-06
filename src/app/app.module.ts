@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { PassTesttaskComponent } from './components/passtesttask/passtesttask.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PassTesttaskComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule
   ],
   providers: [
     provideClientHydration()
