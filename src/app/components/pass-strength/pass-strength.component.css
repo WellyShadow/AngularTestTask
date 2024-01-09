@@ -1,0 +1,37 @@
+.strength-section {
+    display: flex;
+  }
+  
+  .section {
+    width: 55px;
+    height: 10px;
+    margin: 0 1px;
+    background-color: gray;
+    border-radius: 3px;
+  }
+  
+  
+  .easy {
+    .section:nth-child(1) {
+      background-color: red;
+    }
+  }
+  
+  .medium {
+    .section:nth-child(1),
+    .section:nth-child(2) {
+      background-color: yellow;
+    }
+  }
+  
+  .strong {
+    .section {
+      background-color: green;
+    }
+  }
+  
+  .notenough{
+    .section {
+      background-color: red;
+    }
+  }

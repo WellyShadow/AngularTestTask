@@ -1,4 +1,3 @@
-<input type="password" [(ngModel)]="password" (input)=" calculateStrength()">
 <div class="strength-section" [ngClass]="{'notenough': strength === 'notenough', 'easy': strength === 'easy', 'medium': strength === 'medium', 'strong': strength === 'strong'}">
   <div class="section" [ngClass]="{'active': strength !== 'empty'}"></div>
   <div class="section" [ngClass]="{'active': strength === 'medium' || strength === 'strong'}"></div>
