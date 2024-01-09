@@ -1,4 +1,4 @@
-.main-content{
+:host{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +6,8 @@
     height: 100vh;
     font-size: 12px;
     font-family:'Trebuchet MS';
+    background: linear-gradient(30deg,aliceblue,antiquewhite);
+    background-color:antiquewhite;
 }
 
 

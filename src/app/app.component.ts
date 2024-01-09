@@ -7,13 +7,11 @@ import { PasswordStrengthService } from './services/password-strength.service';
 })
 export class AppComponent {
 
-  password: string = '';
   strength: string = '';
   
   constructor(private passwordStrengthService: PasswordStrengthService) {}
 
   calculateStrength(newPassword: string): void {
-    this.password = newPassword;
-    this.strength = this.passwordStrengthService.checkPasswordStrength(this.password);
+    this.strength = this.passwordStrengthService.checkPasswordStrength(newPassword);
   }
 }
